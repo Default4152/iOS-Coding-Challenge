@@ -11,6 +11,7 @@
 		1323482D225FCE1100B9758B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1323482C225FCE1100B9758B /* ViewController.swift */; };
 		13234832225FCE1200B9758B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13234831225FCE1200B9758B /* Assets.xcassets */; };
 		13234835225FCE1200B9758B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13234833225FCE1200B9758B /* LaunchScreen.storyboard */; };
+		1323483D225FCF2000B9758B /* AlbumsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1323483C225FCF2000B9758B /* AlbumsTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		13234831225FCE1200B9758B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		13234834225FCE1200B9758B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		13234836225FCE1200B9758B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1323483C225FCF2000B9758B /* AlbumsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumsTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,8 +59,17 @@
 				13234831225FCE1200B9758B /* Assets.xcassets */,
 				13234833225FCE1200B9758B /* LaunchScreen.storyboard */,
 				13234836225FCE1200B9758B /* Info.plist */,
+				1323483E225FCF2400B9758B /* View Controllers */,
 			);
 			path = "iOS-Coding-Challenge";
+			sourceTree = "<group>";
+		};
+		1323483E225FCF2400B9758B /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1323483C225FCF2000B9758B /* AlbumsTableViewController.swift */,
+			);
+			path = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -132,6 +143,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1323482D225FCE1100B9758B /* ViewController.swift in Sources */,
+				1323483D225FCF2000B9758B /* AlbumsTableViewController.swift in Sources */,
 				1323482B225FCE1100B9758B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
