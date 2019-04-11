@@ -12,6 +12,7 @@
 		13234835225FCE1200B9758B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13234833225FCE1200B9758B /* LaunchScreen.storyboard */; };
 		1323483D225FCF2000B9758B /* AlbumsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1323483C225FCF2000B9758B /* AlbumsTableViewController.swift */; };
 		13234841225FCFF400B9758B /* AlbumTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13234840225FCFF400B9758B /* AlbumTableViewCell.swift */; };
+		13234846225FD09100B9758B /* UIView+Anchor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13234845225FD09100B9758B /* UIView+Anchor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		13234836225FCE1200B9758B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1323483C225FCF2000B9758B /* AlbumsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumsTableViewController.swift; sourceTree = "<group>"; };
 		13234840225FCFF400B9758B /* AlbumTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumTableViewCell.swift; sourceTree = "<group>"; };
+		13234845225FD09100B9758B /* UIView+Anchor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Anchor.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 		13234829225FCE1100B9758B /* iOS-Coding-Challenge */ = {
 			isa = PBXGroup;
 			children = (
+				13234842225FD06B00B9758B /* Extensions */,
 				1323483F225FCFE000B9758B /* View */,
 				1323483E225FCF2400B9758B /* View Controllers */,
 				1323482A225FCE1100B9758B /* AppDelegate.swift */,
@@ -78,6 +81,14 @@
 				13234840225FCFF400B9758B /* AlbumTableViewCell.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		13234842225FD06B00B9758B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				13234845225FD09100B9758B /* UIView+Anchor.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,6 +162,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1323483D225FCF2000B9758B /* AlbumsTableViewController.swift in Sources */,
+				13234846225FD09100B9758B /* UIView+Anchor.swift in Sources */,
 				1323482B225FCE1100B9758B /* AppDelegate.swift in Sources */,
 				13234841225FCFF400B9758B /* AlbumTableViewCell.swift in Sources */,
 			);
