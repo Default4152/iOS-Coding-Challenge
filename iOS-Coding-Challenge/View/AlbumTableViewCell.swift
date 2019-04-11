@@ -20,6 +20,14 @@ class AlbumTableViewCell: UITableViewCell {
         }
     }
     
+    var albumRank: Int? {
+        didSet {
+            if let albumRank = albumRank {
+                albumRankLabel.text = String(albumRank)
+            }
+        }
+    }
+    
     private let cellView: UIView = {
         let view = UIView()
         return view
