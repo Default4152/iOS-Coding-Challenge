@@ -10,9 +10,18 @@ import UIKit
 
 class AlbumsTableViewController: UITableViewController {
     
+    // MARK: - Properties
+    
+    let reuseIdentifier = "AlbumCell"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        tableView.allowsSelection = false
+        
         setupNavigationBar()
+        
+        tableView.register(AlbumTableViewCell.self, forCellReuseIdentifier: reuseIdentifier)
     }
 
     // MARK: - Table view data source
@@ -22,8 +31,7 @@ class AlbumsTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-//        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-        let cell = UITableViewCell()
+        let cell = tableView.dequeueReusableCell(withIdentifier: reuseIdentifier, for: indexPath) as! AlbumTableViewCell
 
         return cell
     }

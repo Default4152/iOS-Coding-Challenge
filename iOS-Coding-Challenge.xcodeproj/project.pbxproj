@@ -56,13 +56,13 @@
 		13234829225FCE1100B9758B /* iOS-Coding-Challenge */ = {
 			isa = PBXGroup;
 			children = (
-				13234842225FD06B00B9758B /* Extensions */,
 				1323483F225FCFE000B9758B /* View */,
 				1323483E225FCF2400B9758B /* View Controllers */,
 				1323482A225FCE1100B9758B /* AppDelegate.swift */,
 				13234831225FCE1200B9758B /* Assets.xcassets */,
 				13234833225FCE1200B9758B /* LaunchScreen.storyboard */,
 				13234836225FCE1200B9758B /* Info.plist */,
+				13234842225FD06B00B9758B /* Extensions */,
 			);
 			path = "iOS-Coding-Challenge";
 			sourceTree = "<group>";
