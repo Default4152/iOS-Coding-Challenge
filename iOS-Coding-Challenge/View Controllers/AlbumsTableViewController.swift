@@ -12,6 +12,7 @@ class AlbumsTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupNavigationBar()
     }
 
     // MARK: - Table view data source
@@ -25,6 +26,13 @@ class AlbumsTableViewController: UITableViewController {
         let cell = UITableViewCell()
 
         return cell
+    }
+    
+    // MARK: - Navigation Bar Setup
+    
+    private func setupNavigationBar() {
+        navigationItem.title = "Apple Top 100 Albums"
+        navigationController?.navigationBar.isTranslucent = false
     }
 
 }
