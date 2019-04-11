@@ -6,11 +6,12 @@
 //  Copyright © 2019 Conner. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 class AlbumsController {
     static let baseURL = URL(string: "https://rss.itunes.apple.com/api/v1/us/apple-music/top-albums/all/100/explicit")!
     var albums: [Album] = []
+    var imageCache = NSCache<NSString, AnyObject>()
 
     func getAlbums(completion: @escaping (Error?) -> Void) {
         let url = AlbumsController.baseURL.appendingPathExtension("json")
@@ -34,5 +35,30 @@ class AlbumsController {
                 print("Error decoding albums: \(error)")
             }
         }.resume()
+    }
+
+    func getAlbumImage(imageUrlString: String, completion: @escaping (Error?, UIImage?) -> Void) {
+        if let image = imageCache.object(forKey: imageUrlString as NSString) as? UIImage {
+            completion(nil, image)
+            return
+        }
+
+        if let url = URL(string: imageUrlString) {
+            URLSession.shared.dataTask(with: url) { (data, response, error) in
+                if let error = error {
+                    completion(error, nil)
+                    return
+                }
+
+                guard let data = data else { fatalError("Cannot unwrap data for image") }
+
+                DispatchQueue.main.async {
+                    if let image = UIImage(data: data) {
+                        self.imageCache.setObject(image, forKey: imageUrlString as NSString)
+                        completion(nil, image)
+                    }
+                }
+            }.resume()
+        }
     }
 }
