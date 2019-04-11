@@ -46,6 +46,7 @@ class AlbumsTableViewController: UITableViewController {
         
         let album = albumsController.albums[indexPath.row]
         cell.album = album
+        cell.albumCoverImage.image = UIImage(named: "placeholder")
         
         return cell
     }
