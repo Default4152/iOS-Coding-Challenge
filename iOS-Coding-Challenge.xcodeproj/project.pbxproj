@@ -14,6 +14,7 @@
 		13234841225FCFF400B9758B /* AlbumTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13234840225FCFF400B9758B /* AlbumTableViewCell.swift */; };
 		13234846225FD09100B9758B /* UIView+Anchor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13234845225FD09100B9758B /* UIView+Anchor.swift */; };
 		13234849225FD7F500B9758B /* TopAlbums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13234848225FD7F500B9758B /* TopAlbums.swift */; };
+		1323484C225FD8B100B9758B /* AlbumsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1323484B225FD8B100B9758B /* AlbumsController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		13234840225FCFF400B9758B /* AlbumTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumTableViewCell.swift; sourceTree = "<group>"; };
 		13234845225FD09100B9758B /* UIView+Anchor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Anchor.swift"; sourceTree = "<group>"; };
 		13234848225FD7F500B9758B /* TopAlbums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopAlbums.swift; sourceTree = "<group>"; };
+		1323484B225FD8B100B9758B /* AlbumsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumsController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,9 +60,10 @@
 		13234829225FCE1100B9758B /* iOS-Coding-Challenge */ = {
 			isa = PBXGroup;
 			children = (
-				13234847225FD7E500B9758B /* Model */,
 				1323483F225FCFE000B9758B /* View */,
 				1323483E225FCF2400B9758B /* View Controllers */,
+				13234847225FD7E500B9758B /* Model */,
+				1323484A225FD89600B9758B /* Model Controller */,
 				1323482A225FCE1100B9758B /* AppDelegate.swift */,
 				13234831225FCE1200B9758B /* Assets.xcassets */,
 				13234833225FCE1200B9758B /* LaunchScreen.storyboard */,
@@ -100,6 +103,14 @@
 				13234848225FD7F500B9758B /* TopAlbums.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		1323484A225FD89600B9758B /* Model Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1323484B225FD8B100B9758B /* AlbumsController.swift */,
+			);
+			path = "Model Controller";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,6 +188,7 @@
 				13234846225FD09100B9758B /* UIView+Anchor.swift in Sources */,
 				1323482B225FCE1100B9758B /* AppDelegate.swift in Sources */,
 				13234841225FCFF400B9758B /* AlbumTableViewCell.swift in Sources */,
+				1323484C225FD8B100B9758B /* AlbumsController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
