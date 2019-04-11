@@ -12,6 +12,14 @@ class AlbumTableViewCell: UITableViewCell {
     
     // MARK: - Properties
     
+    var album: Album? {
+        didSet {
+            albumNameLabel.text = album?.name
+            artistNameLabel.text = album?.artistName
+            genreLabel.text = album?.genres[0].name
+        }
+    }
+    
     private let cellView: UIView = {
         let view = UIView()
         return view
