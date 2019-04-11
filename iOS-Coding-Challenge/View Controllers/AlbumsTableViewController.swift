@@ -48,6 +48,7 @@ class AlbumsTableViewController: UITableViewController {
         cell.album = album
         cell.albumCoverImage.image = UIImage(named: "placeholder")
         cell.albumRank = indexPath.row + 1
+        cell.tag = indexPath.row
         
         albumsController.getAlbumImage(imageUrlString: album.artworkUrl100, completion: { (error, image) in
             if let error = error {
@@ -56,7 +57,9 @@ class AlbumsTableViewController: UITableViewController {
             }
             
             guard let image = image else { fatalError("Something went wrong with getting the image in AlbumCell" )}
-            cell.albumCoverImage.image = image
+            if (cell.tag == indexPath.row) {
+                cell.albumCoverImage.image = image
+            }
         })
         
         return cell
