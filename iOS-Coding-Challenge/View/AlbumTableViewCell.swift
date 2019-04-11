@@ -36,7 +36,7 @@ class AlbumTableViewCell: UITableViewCell {
     private let albumRankLabel: UILabel = {
         let lbl = UILabel()
         lbl.textColor = .black
-        lbl.font = UIFont.boldSystemFont(ofSize: 20)
+        lbl.font = UIFont.boldSystemFont(ofSize: 30)
         lbl.textAlignment = .center
         return lbl
     }()
