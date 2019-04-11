@@ -13,6 +13,7 @@
 		1323483D225FCF2000B9758B /* AlbumsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1323483C225FCF2000B9758B /* AlbumsTableViewController.swift */; };
 		13234841225FCFF400B9758B /* AlbumTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13234840225FCFF400B9758B /* AlbumTableViewCell.swift */; };
 		13234846225FD09100B9758B /* UIView+Anchor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13234845225FD09100B9758B /* UIView+Anchor.swift */; };
+		13234849225FD7F500B9758B /* TopAlbums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13234848225FD7F500B9758B /* TopAlbums.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		1323483C225FCF2000B9758B /* AlbumsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumsTableViewController.swift; sourceTree = "<group>"; };
 		13234840225FCFF400B9758B /* AlbumTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumTableViewCell.swift; sourceTree = "<group>"; };
 		13234845225FD09100B9758B /* UIView+Anchor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Anchor.swift"; sourceTree = "<group>"; };
+		13234848225FD7F500B9758B /* TopAlbums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopAlbums.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		13234829225FCE1100B9758B /* iOS-Coding-Challenge */ = {
 			isa = PBXGroup;
 			children = (
+				13234847225FD7E500B9758B /* Model */,
 				1323483F225FCFE000B9758B /* View */,
 				1323483E225FCF2400B9758B /* View Controllers */,
 				1323482A225FCE1100B9758B /* AppDelegate.swift */,
@@ -89,6 +92,14 @@
 				13234845225FD09100B9758B /* UIView+Anchor.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		13234847225FD7E500B9758B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				13234848225FD7F500B9758B /* TopAlbums.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,6 +173,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1323483D225FCF2000B9758B /* AlbumsTableViewController.swift in Sources */,
+				13234849225FD7F500B9758B /* TopAlbums.swift in Sources */,
 				13234846225FD09100B9758B /* UIView+Anchor.swift in Sources */,
 				1323482B225FCE1100B9758B /* AppDelegate.swift in Sources */,
 				13234841225FCFF400B9758B /* AlbumTableViewCell.swift in Sources */,
